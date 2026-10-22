@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import SwiftUI
 
 class DetailViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var countryNameLabel: UILabel!
@@ -36,12 +37,35 @@ class DetailViewController: UIViewController, MKMapViewDelegate {
         
         self.countryNameLabel.text = country.name
         self.capitalNameLabel.text = country.capital
+        self.setUpTitleView(country: country)
         self.imageView.image = UIImage(named: country.pictureName )
         self.descriptionTextView.text = country.description
         
         self.setRateStars(rate: country.rate)
         self.setMapLocation(lat: self.country?.coordinates.latitude ?? 28.394857,
                             long: self.country?.coordinates.longitude ?? 84.124008)
+    }
+    
+    // Intègre la vue SwiftUI TitleViewSwiftUI dans le conteneur titleView du storyboard
+    private func setUpTitleView(country: Country) {
+        let titleViewSwiftUI = TitleViewSwiftUI(countryName: country.name,
+                                                capitalName: country.capital,
+                                                rate: country.rate)
+        let hostingController = UIHostingController(rootView: titleViewSwiftUI)
+        
+        self.addChild(hostingController)
+        self.titleView.addSubview(hostingController.view)
+        
+        // La vue SwiftUI occupe toute la surface du conteneur titleView
+        hostingController.view.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            hostingController.view.topAnchor.constraint(equalTo: self.titleView.topAnchor),
+            hostingController.view.bottomAnchor.constraint(equalTo: self.titleView.bottomAnchor),
+            hostingController.view.leadingAnchor.constraint(equalTo: self.titleView.leadingAnchor),
+            hostingController.view.trailingAnchor.constraint(equalTo: self.titleView.trailingAnchor)
+        ])
+        
+        hostingController.didMove(toParent: self)
     }
     
     private func setCustomDesign() {
