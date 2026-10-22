@@ -19,6 +19,7 @@
 		42B90C1C2B2A056000779364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1B2B2A056000779364 /* Assets.xcassets */; };
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		BBDE1820308899010055D1C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDE181F308899010055D1C7 /* SceneDelegate.swift */; };
+		BBDE18223089C5A50055D1C7 /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDE18213089C5A50055D1C7 /* TitleViewSwiftUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		42B90C1E2B2A056000779364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42B90C202B2A056000779364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBDE181F308899010055D1C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BBDE18213089C5A50055D1C7 /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				42B90C162B2A055B00779364 /* ListViewController.swift */,
 				424C31BA2B30919400279238 /* CustomCell.swift */,
 				424C31BF2B30A39B00279238 /* MapViewController.swift */,
+				BBDE18213089C5A50055D1C7 /* TitleViewSwiftUI.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				42B90C172B2A055B00779364 /* ListViewController.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
+				BBDE18223089C5A50055D1C7 /* TitleViewSwiftUI.swift in Sources */,
 				424C31BD2B30955E00279238 /* DetailViewController.swift in Sources */,
 				424C31BB2B30919400279238 /* CustomCell.swift in Sources */,
 				BBDE1820308899010055D1C7 /* SceneDelegate.swift in Sources */,
