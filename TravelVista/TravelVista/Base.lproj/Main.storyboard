@@ -147,56 +147,8 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6YZ-wv-jeH" userLabel="TitleView">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JIJ-Vf-aPx" userLabel="NamesView">
-                                                <rect key="frame" x="0.0" y="0.0" width="258" height="65"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTn-kk-9HB">
-                                                        <rect key="frame" x="20" y="8" width="230" height="28"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="28" id="IA1-ae-xmh"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                                                        <color key="textColor" name="CustomBlue"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hanoi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJp-i9-mYY">
-                                                        <rect key="frame" x="20" y="36" width="230" height="21"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="21" id="TMv-8b-1we"/>
-                                                        </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="EJp-i9-mYY" secondAttribute="trailing" constant="8" id="0Y5-FJ-zVv"/>
-                                                    <constraint firstItem="EJp-i9-mYY" firstAttribute="leading" secondItem="JIJ-Vf-aPx" secondAttribute="leading" constant="20" symbolic="YES" id="BTM-vJ-oEP"/>
-                                                    <constraint firstItem="vTn-kk-9HB" firstAttribute="top" secondItem="JIJ-Vf-aPx" secondAttribute="top" constant="8" id="aE9-D7-8Nv"/>
-                                                    <constraint firstItem="vTn-kk-9HB" firstAttribute="leading" secondItem="JIJ-Vf-aPx" secondAttribute="leading" constant="20" id="ffd-zc-a8b"/>
-                                                    <constraint firstAttribute="bottom" secondItem="EJp-i9-mYY" secondAttribute="bottom" constant="8" id="hnS-hi-Ytm"/>
-                                                    <constraint firstItem="EJp-i9-mYY" firstAttribute="top" secondItem="vTn-kk-9HB" secondAttribute="bottom" id="nPo-Hr-tUz"/>
-                                                    <constraint firstAttribute="trailing" secondItem="vTn-kk-9HB" secondAttribute="trailing" constant="8" id="qPj-C9-DnW"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eIx-Y6-EEM" userLabel="RateView">
-                                                <rect key="frame" x="266" y="15" width="111" height="35"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="111" id="Clb-Tr-koj"/>
-                                                    <constraint firstAttribute="height" constant="35" id="sNH-vy-T5B"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
                                         <constraints>
-                                            <constraint firstItem="eIx-Y6-EEM" firstAttribute="centerY" secondItem="6YZ-wv-jeH" secondAttribute="centerY" id="8FB-6b-nzm"/>
-                                            <constraint firstAttribute="bottom" secondItem="JIJ-Vf-aPx" secondAttribute="bottom" id="9yo-HQ-pyw"/>
-                                            <constraint firstItem="JIJ-Vf-aPx" firstAttribute="leading" secondItem="6YZ-wv-jeH" secondAttribute="leading" id="b8t-VI-9Pk"/>
-                                            <constraint firstItem="JIJ-Vf-aPx" firstAttribute="top" secondItem="6YZ-wv-jeH" secondAttribute="top" id="byU-wP-cGJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="eIx-Y6-EEM" secondAttribute="trailing" constant="16" id="c5E-pp-P20"/>
                                             <constraint firstAttribute="height" constant="65" id="ys9-VY-E8T"/>
-                                            <constraint firstItem="eIx-Y6-EEM" firstAttribute="leading" secondItem="JIJ-Vf-aPx" secondAttribute="trailing" constant="8" id="zVI-yG-MNp"/>
                                         </constraints>
                                     </view>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Fi8-GU-Tzc">
@@ -268,14 +220,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="crP-1q-lmw"/>
                     <connections>
-                        <outlet property="capitalNameLabel" destination="EJp-i9-mYY" id="fRz-xJ-ntC"/>
-                        <outlet property="countryNameLabel" destination="vTn-kk-9HB" id="69f-5g-qcl"/>
                         <outlet property="descriptionTextView" destination="Fi8-GU-Tzc" id="J5L-pe-GKy"/>
                         <outlet property="embedMapView" destination="sRM-fQ-OSa" id="06c-Ls-qXh"/>
                         <outlet property="imageView" destination="nFw-jC-nxh" id="QFL-e2-tw4"/>
                         <outlet property="mapButton" destination="VeJ-V9-GNf" id="3gC-9Q-iKz"/>
                         <outlet property="mapView" destination="7TR-oZ-w9T" id="QaF-CH-TBU"/>
-                        <outlet property="rateView" destination="eIx-Y6-EEM" id="TRv-0b-vU5"/>
                         <outlet property="titleView" destination="6YZ-wv-jeH" id="Wmz-cr-2TA"/>
                     </connections>
                 </viewController>
