@@ -18,6 +18,7 @@
 		42B90C1F2B2A056000779364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42B90C1D2B2A056000779364 /* LaunchScreen.storyboard */; };
 		BBA5C132309C636700212FEB /* CountryCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5C131309C636700212FEB /* CountryCellView.swift */; };
 		BBA5C134309C649000212FEB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5C133309C649000212FEB /* ListView.swift */; };
+		BBA5C136309C6AD300212FEB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA5C135309C6AD300212FEB /* DetailView.swift */; };
 		BBDE1820308899010055D1C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDE181F308899010055D1C7 /* SceneDelegate.swift */; };
 		BBDE18223089C5A50055D1C7 /* TitleViewSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBDE18213089C5A50055D1C7 /* TitleViewSwiftUI.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		42B90C202B2A056000779364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBA5C131309C636700212FEB /* CountryCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCellView.swift; sourceTree = "<group>"; };
 		BBA5C133309C649000212FEB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		BBA5C135309C6AD300212FEB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		BBDE181F308899010055D1C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BBDE18213089C5A50055D1C7 /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +61,7 @@
 				BBDE18213089C5A50055D1C7 /* TitleViewSwiftUI.swift */,
 				BBA5C131309C636700212FEB /* CountryCellView.swift */,
 				BBA5C133309C649000212FEB /* ListView.swift */,
+				BBA5C135309C6AD300212FEB /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 				424C31C42B30A72300279238 /* Model.swift in Sources */,
 				BBA5C132309C636700212FEB /* CountryCellView.swift in Sources */,
 				424C31C82B30A78B00279238 /* Service.swift in Sources */,
+				BBA5C136309C6AD300212FEB /* DetailView.swift in Sources */,
 				424C31C02B30A39B00279238 /* MapViewController.swift in Sources */,
 				42B90C132B2A055B00779364 /* AppDelegate.swift in Sources */,
 				BBDE18223089C5A50055D1C7 /* TitleViewSwiftUI.swift in Sources */,

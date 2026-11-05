@@ -5,7 +5,8 @@
 
 import SwiftUI
 
-// Bandeau de titre de l'écran de détail : nom du pays, capitale et note en étoiles
+// Bandeau de titre de l'écran de détail : nom du pays, capitale et note
+
 struct TitleViewSwiftUI: View {
     let countryName: String
     let capitalName: String
