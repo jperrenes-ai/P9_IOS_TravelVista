@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,10 @@
 		BBDE181F308899010055D1C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BBDE18213089C5A50055D1C7 /* TitleViewSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewSwiftUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BBA5C137309C710200212FEB /* ViewModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ViewModel; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		42B90C0C2B2A055B00779364 /* Frameworks */ = {
@@ -95,6 +99,7 @@
 		42B90C112B2A055B00779364 /* TravelVista */ = {
 			isa = PBXGroup;
 			children = (
+				BBA5C137309C710200212FEB /* ViewModel */,
 				424C31C92B30ABE600279238 /* Model */,
 				424C31BE2B30956400279238 /* Views */,
 				42B90C122B2A055B00779364 /* AppDelegate.swift */,
@@ -121,6 +126,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BBA5C137309C710200212FEB /* ViewModel */,
 			);
 			name = TravelVista;
 			productName = TravelVista;

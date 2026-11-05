@@ -2,17 +2,18 @@
 //  CountryCellView.swift
 //  TravelVista
 //
-//  Created by Jonathan PRNS on 05/11/2026.
-//
 
 import SwiftUI
 
 // Cellule de la liste des pays : image ronde, nom du pays, capitale et note
 struct CountryCellView: View {
+    // Pays à afficher dans la cellule
+    let country: Country
+
     var body: some View {
         HStack {
             // Photo du pays, ronde
-            Image("vietnam")
+            Image(country.pictureName)
                 .resizable()
                 .scaledToFill()
                 .frame(width: 52, height: 52)
@@ -20,17 +21,17 @@ struct CountryCellView: View {
 
             // Nom du pays et capitale, l'un sous l'autre
             VStack(alignment: .leading) {
-                Text("Toto")
+                Text(country.name)
                     .font(.system(size: 20))
                     .foregroundStyle(Color("CustomBlue"))
-                Text("Lorem Ipsum")
+                Text(country.capital)
                     .font(.system(size: 15))
             }
 
             Spacer()
 
             // Note suivie d'une étoile
-            Text("5")
+            Text(String(country.rate))
                 .font(.system(size: 17))
             Image(systemName: "star.fill")
                 .resizable()
@@ -42,5 +43,10 @@ struct CountryCellView: View {
 }
 
 #Preview {
-    CountryCellView()
+    CountryCellView(country: Country(name: "Norvège",
+                                     capital: "Oslo",
+                                     description: "",
+                                     rate: 4,
+                                     pictureName: "norvege",
+                                     coordinates: Coordinates(latitude: 59.9139, longitude: 10.7522)))
 }

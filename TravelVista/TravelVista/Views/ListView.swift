@@ -7,34 +7,23 @@ import SwiftUI
 
 // Écran principal : liste des pays classés par région
 struct ListView: View {
-    // Données fausses et fixes pour tester l'affichage (les vraies données viendront plus tard)
-    let regions = ["Europe", "Asie", "Oceanie", "Afrique", "Ameriques"]
-    
-    // Pays factice utilisé pour tester la navigation vers la page de détail
-    let fakeCountry = Country(name: "Toto",
-                              capital: "Lorem Ipsum",
-                              description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                              rate: 5,
-                              pictureName: "vietnam",
-                              coordinates: Coordinates(latitude: 21.0285, longitude: 105.8542))
-    
+    // ViewModel qui fournit les régions et leurs pays
+    let viewModel = ListViewModel()
+
     var body: some View {
         NavigationStack {
             List {
                 // Une section par région
-                ForEach(regions, id: \.self) { region in
-                    Section(header: Text(region)) {
-                        // Deux cellules factices par section, chacune cliquable vers le détail
-                        NavigationLink(destination: DetailView(country: fakeCountry)
-                            .navigationTitle(fakeCountry.name)
-                            .navigationBarTitleDisplayMode(.inline)) {
-                                CountryCellView()
+                ForEach(viewModel.regions, id: \.name) { region in
+                    Section(header: Text(region.name)) {
+                        // Une cellule par pays de la région, cliquable vers sa page de détail
+                        ForEach(region.countries, id: \.name) { country in
+                            NavigationLink(destination: DetailView(country: country)
+                                .navigationTitle(country.name)
+                                .navigationBarTitleDisplayMode(.inline)) {
+                                CountryCellView(country: country)
                             }
-                        NavigationLink(destination: DetailView(country: fakeCountry)
-                            .navigationTitle(fakeCountry.name)
-                            .navigationBarTitleDisplayMode(.inline)) {
-                                CountryCellView()
-                            }
+                        }
                     }
                 }
             }
